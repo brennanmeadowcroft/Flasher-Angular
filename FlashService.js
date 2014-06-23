@@ -31,6 +31,10 @@ app.service('FlashService', [function() {
     // Allows the user to dismiss a particular persistent message
     _messagesPersistent.splice(index, 1);
   }
+  this.clearAllMessages = function() {
+    _messages = [];
+    _messagesPersistent = [];
+  }
   this.getMessages = function() {
     // Provide messages to the page
     page_messages = _messages;
