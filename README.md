@@ -7,7 +7,7 @@ A simple library to provide "Rails-like" flash notifications across a site.  It 
 ###Setting up Flash Messages:
 Inject the service into any controller you wish to be able to display messages
 ```javascript
-
+app.myController('MyController', function($scope, FlashService) { ... });
 ```
 
 
